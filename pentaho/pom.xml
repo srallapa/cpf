@@ -9,6 +9,10 @@
   </parent>
   <artifactId>cpf-pentaho</artifactId>
 
+  <properties>
+    <maven-surefire-plugin.argLine> --add-opens=java.base/java.lang=ALL-UNNAMED </maven-surefire-plugin.argLine>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>pentaho</groupId>
@@ -196,7 +200,7 @@
     <!-- endregion -->
   </dependencies>
 
-  <build>
+  <!--build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -211,6 +215,6 @@
         </configuration>
       </plugin>
     </plugins>
-  </build>
+  </build-->
 
 </project>
